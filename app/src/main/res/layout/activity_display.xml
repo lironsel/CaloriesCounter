@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iamhere.ciapps.net.caloriescounter.DisplayActivity"
+    android:background="#216396">
+
+    <LinearLayout
+        android:id="@+id/linerLayout"
+        android:background="#8dc9d1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalAmountTextView"
+            android:textColor="#fff3f6ff"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:paddingLeft="30dp"
+            android:text="@string/food_total_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="#ffee1d27"
+            android:text="|"/>
+
+        <TextView
+            android:id="@+id/totalItemsTextView"
+            android:textColor="#ff212121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="@string/food_items_num"
+            android:layout_marginLeft="5dp"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="334dp"
+        android:layout_height="377dp"
+        android:dividerHeight="2dp"
+        android:divider="#212121"
+        android:id="@+id/list"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/linerLayout"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintVertical_bias="0.236"/>
+
+</android.support.constraint.ConstraintLayout>
